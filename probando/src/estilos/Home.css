@@ -1,0 +1,39 @@
+.imagen-front{  
+    width: 100%;
+    animation: sombrearFront 1s  ease-out forwards;
+
+}
+
+@keyframes sombrearFront {
+    100%{
+        filter: brightness(65%) blur(2px);
+    }
+}
+
+.contenedor-front{
+    display: flex;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bloque{
+    height: 100%;
+    width: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    z-index: 30;
+    animation: mover .25s .5s forwards;
+
+    
+}
+
+@keyframes mover{
+    /* 0%{
+        transform: translateX(-100%);
+    } */
+    100%{
+        width: 100%;
+        /* transform: translateX(100%); */
+    }
+}
